@@ -26,4 +26,6 @@
   --radius-md: var(--radius-md);
   --radius-lg: var(--radius-lg);
   --radius-xl: var(--radius-xl);
+
+  --shadow-card: var(--shadow-card);
 }

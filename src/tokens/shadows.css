@@ -1,0 +1,6 @@
+:root {
+  /* Semantic — Shadow */
+  --shadow-card:
+    0px 6px 14px -6px rgba(19, 25, 39, 0.12),
+    0px 10px 32px -4px rgba(19, 25, 39, 0.1);
+}
