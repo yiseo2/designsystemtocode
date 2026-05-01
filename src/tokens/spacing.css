@@ -1,0 +1,27 @@
+:root {
+  /* Primitive */
+  --primitive-spacing-0: 0px;
+  --primitive-spacing-1: 4px;
+  --primitive-spacing-2: 8px;
+  --primitive-spacing-3: 12px;
+  --primitive-spacing-4: 16px;
+  --primitive-spacing-5: 20px;
+  --primitive-spacing-6: 24px;
+
+  /* Semantic — Spacing */
+  --spacing-none: var(--primitive-spacing-0);
+  --spacing-xxs: var(--primitive-spacing-1);
+  --spacing-xs: var(--primitive-spacing-2);
+  --spacing-sm: var(--primitive-spacing-3);
+  --spacing-md: var(--primitive-spacing-4);
+  --spacing-lg: var(--primitive-spacing-5);
+  --spacing-xl: var(--primitive-spacing-6);
+
+  /* Semantic — Radius */
+  --radius-xxs: 4px;
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+}

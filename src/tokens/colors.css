@@ -1,0 +1,122 @@
+:root {
+  /* Primitive */
+  --primitive-primary-50: #edeffe;
+  --primitive-primary-100: #c8cefc;
+  --primitive-primary-200: #aeb6fb;
+  --primitive-primary-300: #8895f9;
+  --primitive-primary-400: #7181f8;
+  --primitive-primary-500: #4e61f6;
+  --primitive-primary-600: #4758e0;
+  --primitive-primary-700: #3745af;
+  --primitive-primary-800: #2b3587;
+  --primitive-primary-900: #212967;
+
+  --primitive-grey-50: #f9fafb;
+  --primitive-grey-100: #f3f4f6;
+  --primitive-grey-200: #e5e7ea;
+  --primitive-grey-300: #d2d5db;
+  --primitive-grey-400: #9ea2ae;
+  --primitive-grey-500: #6d717f;
+  --primitive-grey-600: #4d5461;
+  --primitive-grey-700: #394050;
+  --primitive-grey-800: #212936;
+  --primitive-grey-900: #131927;
+
+  --primitive-green-50: #ecf8ef;
+  --primitive-green-100: #c5e9cd;
+  --primitive-green-200: #a9deb4;
+  --primitive-green-300: #81cf92;
+  --primitive-green-400: #69c57d;
+  --primitive-green-500: #43b75d;
+  --primitive-green-600: #3da755;
+  --primitive-green-700: #308242;
+  --primitive-green-800: #256533;
+  --primitive-green-900: #1c4d27;
+
+  --primitive-red-50: #fdecec;
+  --primitive-red-100: #fac5c3;
+  --primitive-red-200: #f7a9a7;
+  --primitive-red-300: #f4827e;
+  --primitive-red-400: #f16965;
+  --primitive-red-500: #ee443f;
+  --primitive-red-600: #d93e39;
+  --primitive-red-700: #a9302d;
+  --primitive-red-800: #832523;
+  --primitive-red-900: #641d1a;
+
+  --primitive-yellow-50: #fff7e6;
+  --primitive-yellow-100: #ffe5b0;
+  --primitive-yellow-200: #ffd88a;
+  --primitive-yellow-300: #ffc654;
+  --primitive-yellow-400: #ffbb33;
+  --primitive-yellow-500: #ffaa00;
+  --primitive-yellow-600: #e89b00;
+  --primitive-yellow-700: #b57900;
+  --primitive-yellow-800: #8c5e00;
+  --primitive-yellow-900: #6b4700;
+
+  --primitive-blue-50: #e6f4ff;
+  --primitive-blue-100: #b0deff;
+  --primitive-blue-200: #8aceff;
+  --primitive-blue-300: #54b8ff;
+  --primitive-blue-400: #33aaff;
+  --primitive-blue-500: #0095ff;
+  --primitive-blue-600: #0088e8;
+  --primitive-blue-700: #006ab5;
+  --primitive-blue-800: #00528c;
+  --primitive-blue-900: #003f6b;
+
+  --primitive-white-10: #ffffff1a;
+  --primitive-white-20: #ffffff33;
+  --primitive-white-30: #ffffff4d;
+  --primitive-white-40: #ffffff66;
+  --primitive-white-50: #ffffff80;
+  --primitive-white-60: #ffffff99;
+  --primitive-white-70: #ffffffb2;
+  --primitive-white-80: #ffffffcc;
+  --primitive-white-90: #ffffffe5;
+  --primitive-white-100: #ffffff;
+
+  --primitive-black-10: #0000001a;
+  --primitive-black-20: #00000033;
+  --primitive-black-30: #0000004d;
+  --primitive-black-40: #00000066;
+  --primitive-black-50: #00000080;
+  --primitive-black-60: #00000099;
+  --primitive-black-70: #000000b2;
+  --primitive-black-80: #000000cc;
+  --primitive-black-90: #000000e5;
+  --primitive-black-100: #000000;
+
+  /* Semantic — Surface */
+  --color-surface-white: var(--primitive-white-100);
+  --color-surface-grey: var(--primitive-grey-50);
+  --color-surface-accent: var(--primitive-primary-50);
+  --color-surface-black: var(--primitive-grey-900);
+
+  /* Semantic — Text */
+  --color-text-primary-black: var(--primitive-grey-900);
+  --color-text-secondary-dark-grey: var(--primitive-grey-500);
+  --color-text-links: var(--primitive-primary-500);
+  --color-text-primary-white: var(--primitive-white-100);
+  --color-text-disabled: var(--primitive-grey-400);
+  --color-text-accent: var(--primitive-primary-500);
+  --color-text-grey: var(--primitive-grey-400);
+  --color-text-light-grey: var(--primitive-grey-300);
+  --color-text-success: var(--primitive-green-500);
+  --color-text-info: var(--primitive-blue-500);
+  --color-text-warning: var(--primitive-yellow-500);
+  --color-text-error: var(--primitive-red-500);
+  --color-text-secondary-white: var(--primitive-white-60);
+
+  /* Semantic — Icon */
+  --color-icon-white: var(--primitive-white-100);
+  --color-icon-black: var(--primitive-grey-900);
+  --color-icon-accent: var(--primitive-primary-500);
+  --color-icon-grey: var(--primitive-grey-400);
+  --color-icon-light-grey: var(--primitive-grey-300);
+  --color-icon-success: var(--primitive-green-500);
+  --color-icon-info: var(--primitive-blue-500);
+  --color-icon-warning: var(--primitive-yellow-500);
+  --color-icon-error: var(--primitive-red-500);
+}
