@@ -1,0 +1,44 @@
+:root {
+  /* Primitive — Font family */
+  --primitive-font-family-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Primitive — Font weight */
+  --primitive-font-weight-regular: 400;
+  --primitive-font-weight-semibold: 600;
+
+  /* Primitive — Font size */
+  --primitive-font-size-14: 14px;
+  --primitive-font-size-16: 16px;
+  --primitive-font-size-24: 24px;
+  --primitive-font-size-48: 48px;
+
+  /* Primitive — Line height */
+  --primitive-line-height-20: 20px;
+  --primitive-line-height-24: 24px;
+  --primitive-line-height-28: 28px;
+  --primitive-line-height-58: 58px;
+
+  /* Semantic — Typography (mapped to Figma "Text Font/*", "Button Font/*") */
+  --font-family-base: var(--primitive-font-family-sans);
+
+  --font-weight-regular: var(--primitive-font-weight-regular);
+  --font-weight-semibold: var(--primitive-font-weight-semibold);
+
+  --font-size-h1: var(--primitive-font-size-48);
+  --line-height-h1: var(--primitive-line-height-58);
+
+  --font-size-h5: var(--primitive-font-size-24);
+  --line-height-h5: var(--primitive-line-height-28);
+
+  --font-size-s2-subtitle: var(--primitive-font-size-16);
+  --line-height-s2-subtitle: var(--primitive-line-height-24);
+
+  --font-size-b1-body: var(--primitive-font-size-16);
+  --line-height-b1-body: var(--primitive-line-height-24);
+
+  --font-size-b3-body: var(--primitive-font-size-14);
+  --line-height-b3-body: var(--primitive-line-height-20);
+
+  --font-size-button-large: var(--primitive-font-size-16);
+  --line-height-button-large: var(--primitive-line-height-20);
+}

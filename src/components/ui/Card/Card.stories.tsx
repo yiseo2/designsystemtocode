@@ -28,11 +28,16 @@ const meta = {
       control: 'inline-radio',
       options: ['vertical', 'horizontal'],
     },
+    imageWidth: {
+      control: { type: 'number' },
+      description: 'Image width in horizontal orientation (px or CSS value).',
+    },
   },
   args: {
     orientation: 'vertical',
     imageSrc: SAMPLE_IMAGE,
     imageAlt: 'Sample',
+    imageWidth: 120,
     title: 'Title',
     description: 'Keep your messages short, but make sure they cover everything you need to say.',
     primaryButton: { label: 'Button' },

@@ -12,6 +12,7 @@ export interface CardProps {
   orientation?: CardOrientation;
   imageSrc?: string;
   imageAlt?: string;
+  imageWidth?: string | number;
   title?: ReactNode;
   description?: ReactNode;
   primaryButton?: CardButton | null;
@@ -19,11 +20,6 @@ export interface CardProps {
   className?: string;
   style?: CSSProperties;
 }
-
-/* ⚠️ 누락된 토큰: card-width / card-image-width-horizontal.
-   Figma source(7Ol4nYEI0AYBLB76yt12NZ)에 너비 변수 미존재.
-   docs/design-tokens.md L143 정책에 따라 픽셀값 인라인 + 플래그 처리. */
-const HORIZONTAL_IMAGE_WIDTH = '120px';
 
 const containerBase = [
   'bg-[var(--color-surface-white)]',
@@ -42,6 +38,7 @@ export function Card({
   orientation = 'vertical',
   imageSrc,
   imageAlt = '',
+  imageWidth = 120,
   title = 'Title',
   description = 'Keep your messages short, but make sure they cover everything you need to say.',
   primaryButton = { label: 'Button' },
@@ -52,6 +49,8 @@ export function Card({
   const isVertical = orientation === 'vertical';
   const showTextBlock = title != null || description != null;
   const showButtons = isVertical && (primaryButton || secondaryButton);
+  const horizontalImageWidth =
+    typeof imageWidth === 'number' ? `${imageWidth}px` : imageWidth;
 
   return (
     <div
@@ -68,7 +67,7 @@ export function Card({
             ? 'relative w-full flex-1 min-h-0 overflow-hidden'
             : 'relative shrink-0 self-stretch overflow-hidden'
         }
-        style={isVertical ? undefined : { width: HORIZONTAL_IMAGE_WIDTH }}
+        style={isVertical ? undefined : { width: horizontalImageWidth }}
       >
         {imageSrc && (
           <img
@@ -91,7 +90,7 @@ export function Card({
           <div className="flex flex-col gap-[var(--spacing-xxs)] w-full">
             {title && (
               <p
-                className="m-0 text-[16px] leading-[24px] font-semibold w-full"
+                className="m-0 text-s2-subtitle w-full"
                 style={{ color: 'var(--color-text-primary-black)' }}
               >
                 {title}
@@ -99,7 +98,7 @@ export function Card({
             )}
             {description && (
               <p
-                className="m-0 text-[14px] leading-[20px] font-normal w-full"
+                className="m-0 text-b3-body w-full"
                 style={{ color: 'var(--color-text-secondary-dark-grey)' }}
               >
                 {description}

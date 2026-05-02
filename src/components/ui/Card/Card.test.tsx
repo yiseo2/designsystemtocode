@@ -65,6 +65,22 @@ describe('Card', () => {
     expect(img).toHaveAttribute('src', '/sample.jpg');
   });
 
+  it('applies imageWidth in horizontal orientation', () => {
+    const { container } = render(
+      <Card orientation="horizontal" imageSrc="/sample.jpg" imageAlt="Sample" imageWidth={160} />,
+    );
+    const imageWrapper = container.querySelector('img')?.parentElement;
+    expect(imageWrapper).toHaveStyle({ width: '160px' });
+  });
+
+  it('accepts string imageWidth (e.g. "10rem")', () => {
+    const { container } = render(
+      <Card orientation="horizontal" imageSrc="/sample.jpg" imageAlt="Sample" imageWidth="10rem" />,
+    );
+    const imageWrapper = container.querySelector('img')?.parentElement;
+    expect(imageWrapper).toHaveStyle({ width: '10rem' });
+  });
+
   it.each(['vertical', 'horizontal'] as const)(
     'renders %s orientation without crashing',
     (orientation) => {

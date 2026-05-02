@@ -28,4 +28,33 @@
   --radius-xl: var(--radius-xl);
 
   --shadow-card: var(--shadow-card);
+
+  --font-sans: var(--font-family-base);
+
+  --font-weight-regular: var(--font-weight-regular);
+  --font-weight-semibold: var(--font-weight-semibold);
+
+  --text-h1: var(--font-size-h1);
+  --text-h1--line-height: var(--line-height-h1);
+  --text-h1--font-weight: var(--font-weight-semibold);
+
+  --text-h5: var(--font-size-h5);
+  --text-h5--line-height: var(--line-height-h5);
+  --text-h5--font-weight: var(--font-weight-semibold);
+
+  --text-s2-subtitle: var(--font-size-s2-subtitle);
+  --text-s2-subtitle--line-height: var(--line-height-s2-subtitle);
+  --text-s2-subtitle--font-weight: var(--font-weight-semibold);
+
+  --text-b1-body: var(--font-size-b1-body);
+  --text-b1-body--line-height: var(--line-height-b1-body);
+  --text-b1-body--font-weight: var(--font-weight-regular);
+
+  --text-b3-body: var(--font-size-b3-body);
+  --text-b3-body--line-height: var(--line-height-b3-body);
+  --text-b3-body--font-weight: var(--font-weight-regular);
+
+  --text-button-large: var(--font-size-button-large);
+  --text-button-large--line-height: var(--line-height-button-large);
+  --text-button-large--font-weight: var(--font-weight-semibold);
 }

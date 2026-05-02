@@ -159,9 +159,9 @@ export function Alert({
               <p
                 style={{
                   margin: 0,
-                  fontSize: '16px',
-                  lineHeight: '24px',
-                  fontWeight: 600,
+                  fontSize: 'var(--font-size-s2-subtitle)',
+                  lineHeight: 'var(--line-height-s2-subtitle)',
+                  fontWeight: 'var(--font-weight-semibold)',
                   color: titleColor,
                 }}
               >
@@ -172,9 +172,9 @@ export function Alert({
               <p
                 style={{
                   margin: 0,
-                  fontSize: '14px',
-                  lineHeight: '20px',
-                  fontWeight: 400,
+                  fontSize: 'var(--font-size-b3-body)',
+                  lineHeight: 'var(--line-height-b3-body)',
+                  fontWeight: 'var(--font-weight-regular)',
                   color: descriptionColor,
                 }}
               >
@@ -201,9 +201,9 @@ export function Alert({
                   padding: 0,
                   cursor: 'pointer',
                   fontFamily: 'inherit',
-                  fontSize: '16px',
-                  lineHeight: '20px',
-                  fontWeight: 600,
+                  fontSize: 'var(--font-size-button-large)',
+                  lineHeight: 'var(--line-height-button-large)',
+                  fontWeight: 'var(--font-weight-semibold)',
                   color: leftButtonColor,
                 }}
               >
@@ -220,9 +220,9 @@ export function Alert({
                   padding: 0,
                   cursor: 'pointer',
                   fontFamily: 'inherit',
-                  fontSize: '16px',
-                  lineHeight: '20px',
-                  fontWeight: 600,
+                  fontSize: 'var(--font-size-button-large)',
+                  lineHeight: 'var(--line-height-button-large)',
+                  fontWeight: 'var(--font-weight-semibold)',
                   color: rightButtonColor,
                 }}
               >
